@@ -1,10 +1,18 @@
-Project 1:
+# Project 1
 
-Students: ori ohayon and avy kalifa
+## Team Members
+* **Ori Ohayon**
+* **Avy Kalifa**
 
-ori : 1. kill all files by name
-      2. count files by their ending(jpg, png, txt, etc...)
+---
 
+## Assignments Breakdown
 
-Avy : 	1. Countdown timer
-		2. Random password
+### 🧑‍💻 Ori
+1. **Kill all files by name** – A script to terminate/delete files based on their filename.
+2. **Count files by extension** – A script to count files grouped by their ending (e.g., `.jpg`, `.png`, `.txt`).
+
+### 🧑‍💻 Avy
+1. **Countdown timer** – A functional shell-based countdown clock.
+2. **Random password generator** – A script to generate secure, randomized passwords.
+3. ** Internet connection tester** - Script check weather is or is not connected to internet.
