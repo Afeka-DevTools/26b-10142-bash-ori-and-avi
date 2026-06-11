@@ -2,10 +2,13 @@ Project 1:
 
 Students: ori ohayon and avy kalifa
 
-ori : 1. kill all process by name
+ori : 
+      1. kill all process by name
       2. count files by their ending(jpg, png, txt, etc...)
       3. scan open ports in given ip address.
-
+      4. show files disk usage (most usage files)
+      5. check battery status
+	
 general instructions for the scripts:
 
 	1. go into github and into our repo and press on: code -> local -> copy our HTTPS(regular)/SSH.
@@ -22,4 +25,15 @@ instruction per script:
 2. count_file_by_type:
 	arguments required: "type of file you want to count"
 
+3. scan_open_ports:
+	arguments required: "ip address, range of port numbers, low , high"
 
+4. show_files_disk_usage:
+	required arguments: none.
+
+5. check_battery_status:
+	required arguments: none.
+	
+	NEEDS!! : "sudo apt install acpi"
+
+ 
