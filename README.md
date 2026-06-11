@@ -9,7 +9,7 @@ ori : 1. kill all process by name
 general instructions for the scripts:
 
 	1. go into github and into our repo and press on: code -> local -> copy our HTTPS(regular)/SSH.
-	2. open you terminal and write git clone "copied address".
+	2. open your terminal and write git clone "copied address".
 	3. after it has been cloned go to the cloned directory inside your computer and you will have the scripts insied the "scripts" directory.
 	4. type: chmod +x "script name" to get permission (put the script name you want instead of the field "script name").
 	5. type: ./"script name" to start it.
