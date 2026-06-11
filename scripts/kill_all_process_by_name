@@ -1,14 +1,25 @@
 #!/bin/bash
 
-echo "hello , starting killing process by name:"
+read -p "Hello, please enter the name of the process you want to kill: " process
 
-read -p "enter your process name you want to kill: " process
+if [ -z "$process" ]; then
+	echo "process wasn't typed."
+	exit 1
+fi  
 
 read -p "do you really want to kill $process? yes/no: " answer
 
 if [ "$answer" == "yes" ]; then
-	echo "killing $process ..."
+	echo "trying to kill $process ..."
 	pkill -f "$process"
+	if [ $? -eq 0 ]; then
+		echo "$process sucessfully killed!"
+	else
+		echo "$process does not exist or you dont have premission to kill it"
+	fi
 else
 	echo "aborting process..."
+	exit 1
 fi
+
+
