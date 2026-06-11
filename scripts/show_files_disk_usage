@@ -1,6 +1,17 @@
 #!/bin/bash
 
+if [ -d "/c/" ]; then
+    	echo "windows operating system detected."
+	root_path="/c/"
+
+else
+	echo "linux operating system detected."
+    	root_path="/"
+fi
+
 echo "showing files disk usage...."
-du -h 2>/dev/null
-echo "files scanning finished"
+
+du -h "$root_path" 2>/dev/null
+
+echo "finished..."
 
