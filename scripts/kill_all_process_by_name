@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "hello , starting killing process by name:"
+
+read -p "enter your process name you want to kill: " process
+
+read -p "do you really want to kill $process? yes/no: " answer
+
+if [ "$answer" == "yes" ]; then
+	echo "killing $process ..."
+	pkill -f "$process"
+else
+	echo "aborting process..."
+fi
