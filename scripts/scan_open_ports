@@ -1,0 +1,36 @@
+#!/bin/bash
+
+read -p "Hello, please enter an ip address to scan open ports in: " ip_address
+
+if [ -z "$ip_address" ]; then
+	echo "no address was inserted."
+	exit 1
+fi
+
+read -p "enter lowest port number you want to check: " low_port
+read -p "enter highest port number you want to check: " high_port
+
+if [ -z "$low_port" ] ||  [ -z "$high_port" ]; then
+	echo "no range was inserted."
+	exit 1
+
+elif [ "$low_port" -lt 0 ]; then
+	echo "port number cant start from a negative number!"
+	exit 1
+fi
+
+echo "trying to scan ports...."
+
+for((port=$low_port; port <= $high_port; port++))
+do
+	nc -z -w 1 "$ip_address" "$port" 2>/dev/null
+	
+	if [ $? -eq 0 ]; then
+		echo "port $port is open"
+	fi
+done
+
+echo "scanning completed..."
+ 
+
+

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+read -p "Hello, please enter the type of files you want to count: " file_type
+
+if [ -z "$file_type" ]; then
+	echo "no type was entered."
+	exit 1
+fi
+
+file_type=${file_type#.}
+
+echo "counting files with type $file_type..."
+
+count=$(find . -type f -name "*.$file_type" | wc -l)
+
+echo "Found $count files ending with $file_type"
+

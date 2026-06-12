@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ -d "/c/" ]; then
+    	echo "windows operating system detected."
+	root_path="/c/"
+
+else
+	echo "linux operating system detected."
+    	root_path="/"
+fi
+
+echo "showing files disk usage...."
+
+du -h "$root_path" 2>/dev/null | awk '$1 != "0" && $1 != "0B" {print} $1 == "0" || $1 == "0B" {exit}' | sort -rh | head -n 20
+
+echo "finished..."
+
