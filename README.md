@@ -1,39 +1,64 @@
-Project 1:
+# Project 1
 
-Students: ori ohayon and avy kalifa
+## Team Members
+* **Ori Ohayon**
+* **Avy Kalifa**
 
-ori : 
-      1. kill all process by name
-      2. count files by their ending(jpg, png, txt, etc...)
-      3. scan open ports in given ip address.
-      4. show files disk usage (most usage files)
-      5. check battery status
-	
-general instructions for the scripts:
+---
 
-	1. go into github and into our repo and press on: code -> local -> copy our HTTPS(regular)/SSH.
-	2. open your terminal and write git clone "copied address"(put address instead of "copied address").
-	3. after it has been cloned go to the cloned directory inside your computer and you will have the scripts insied the "scripts" directory.
-	4. type: chmod +x "script name" to get permission (put the script name you want instead of the field "script name").
-	5. type: ./"script name" to start it.
+## Assignments Breakdown
 
-instruction per script:
+### 🧑‍💻 Ori
+1. **Kill all processes by name** – A script to terminate processes based on their name.
+2. **Count files by extension** – A script to count files grouped by their ending (e.g., `.jpg`, `.png`, `.txt`).
+3. **Scan open ports** – Scans open ports in a given IP address.
+4. **Show files disk usage** – Displays the files using the most disk space.
+5. **Check battery status** – Checks the current battery level and status.
 
-1. kill_all_process_by_name:
-	arguments required: "name of process you want to kill"
+### 🧑‍💻 Avy
+1. **Countdown timer** – A functional shell-based countdown clock.
+2. **Random password generator** – A script to generate secure, randomized passwords.
+3. **Internet connection tester** – A script to check whether the system is connected to the internet.
+4. **Weather** – Shows the current weather for a specific city.
+5. **Uptime** – Shows the system's total uptime.
 
-2. count_file_by_type:
-	arguments required: "type of file you want to count"
+---
 
-3. scan_open_ports:
-	arguments required: "ip address, range of port numbers, low , high"
+## Instructions Per Script
 
-4. show_files_disk_usage:
-	required arguments: none.
+### Ori's Scripts:
 
-5. check_battery_status:
-	required arguments: none.
-	
-	NEEDS!! : "sudo apt install acpi"
+#### 1. kill_all_process_by_name
+* **Arguments required:** Name of the process you want to kill.
 
- 
+#### 2. count_file_by_type
+* **Arguments required:** Type of file extension you want to count (e.g., txt, png).
+
+#### 3. scan_open_ports
+* **Arguments required:** IP address, range of port numbers (low, high).
+
+#### 4. show_files_disk_usage
+* **Arguments required:** None.
+
+#### 5. check_battery_status
+* **Arguments required:** None.
+* **Dependencies Required:** You must install `acpi` for this to work. Run: `sudo apt install acpi`
+
+---
+
+### Avy's Scripts:
+
+#### 1. countdown_timer
+* **Arguments required:** Time duration in the format `HH:MM:SS`.
+
+#### 2. random_password_generator
+* **Arguments required:** None.
+
+#### 3. internet_connection_tester
+* **Arguments required:** None.
+
+#### 4. weather
+* **Arguments required:** Name of the city (e.g., `London`, `Tokyo`).
+
+#### 5. uptime
+* **Arguments required:** None.
